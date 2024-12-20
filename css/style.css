@@ -27,6 +27,11 @@ body {
   margin: 0 auto;
 }
 
+.page {
+}
+.page__hero {
+}
+
 /* Components */
 .header-block {
 }
@@ -47,4 +52,138 @@ body {
   font-size: 48px;
   font-weight: 800;
   line-height: 135.416667%; /* 65/48 */
+}
+
+/* Header */
+
+.header {
+  padding-top: 77px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}
+.header__logo {
+  flex: 0 0 80px;
+}
+.header__logo img {
+  max-width: 100%;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.menu__item {
+}
+.menu__link {
+  font-size: 14px;
+  color: #9a9ea6;
+  transition: color 0.3s ease 0s;
+}
+
+.menu__link:hover {
+  color: #4737ff;
+}
+
+/* Hero */
+.hero {
+  padding-top: 62px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.hero__container {
+  display: flex;
+}
+.hero__container::before,
+.hero__container::after {
+  position: absolute;
+  content: "";
+  background-color: #4475f2;
+}
+
+.hero__container::before {
+  left: calc(50% + 30px);
+  bottom: 0;
+  height: 150%;
+  width: 100vw;
+  border-radius: 20px;
+  transform: skewX(-20deg);
+  transform-origin: left bottom;
+  box-shadow: 0 30px 60px 0 rgba(71, 74, 87, 0.25);
+}
+
+.hero__container::after {
+  transform: skewX(-20deg);
+}
+.hero__content {
+  flex: 0 1 50%;
+}
+
+.content-hero {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 30px;
+}
+.content-hero__title {
+  color: #181e4b;
+  font-weight: 800;
+  font-size: 76px;
+  line-height: 117.105263%; /* 89/76 */
+  letter-spacing: -4px;
+}
+.content-hero__title a {
+  color: #4475f2;
+  text-decoration: underline;
+}
+.content-hero__title a:hover {
+  text-decoration: none;
+}
+.content-hero__text {
+}
+.content-hero__text p {
+  line-height: 187.5%; /* 30/16 */
+}
+.content-hero__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.content-hero__button {
+  box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.25);
+  border-radius: 10px 10px 10px 10px;
+  background-color: #4475f2;
+  padding: 18px 54px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 156.25%; /* 25/16 */
+  position: relative;
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.content-hero__button:hover {
+  box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.5);
+  top: 3px;
+}
+.hero__images {
+  flex: 0 1 50%;
+}
+
+.images-hero {
+}
+.images-hero__item {
+}
+.images-hero__item--01 {
+}
+.images-hero__picture {
+}
+.images-hero__item--02 {
+}
+.images-hero__item--03 {
+}
+.images-hero__item--04 {
 }
